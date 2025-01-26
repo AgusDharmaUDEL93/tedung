@@ -55,7 +55,7 @@ class LoginController extends GetxController {
     Get.defaultDialog(
       title: errorMessage == null ? "Succes" : "Error",
       middleText: errorMessage == null
-          ? "Success to login on X buddy enjoy"
+          ? "Sukses untuk masuk ke tedung"
           : "$errorMessage",
       onConfirm: () {
         Get.offAndToNamed(Routes.HOME);

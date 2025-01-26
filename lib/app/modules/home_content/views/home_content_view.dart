@@ -101,67 +101,7 @@ class HomeContentView extends GetView<HomeContentController> {
                 ),
                 CardArticle(
                   onTap: () {
-                    Get.toNamed(Routes.ARTICLE_DETAIL, arguments: {
-                      "article_image":
-                          "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
-                      "article_title":
-                          "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
-                      "article_content":
-                          "Apa yang dimaksud dengan perundungan? Perlu diketahui terlebih dahulu bahwa perundungan atau bullying berasal dari kata merundung yang dalam KBBI berarti menyakiti orang lain, baik secara fisik maupun psikis, dalam bentuk kekerasan verbal, sosial, atau fisik berulang kali dan dari waktu ke waktu, seperti memanggil nama seseorang dengan julukan yang tidak disukai, memukul, mendorong, menyebarkan rumor, mengancam, atau merongrong. Selain itu, bullying juga dapat didefinisikan sebagai perilaku agresif dan menekan, baik dalam bentuk tindakan fisik secara langsung atau menyerang melalui perkataan.[1] Bentuk-bentuk dari bullying ini berubah seiring berjalannya usia seseorang. Mulai dari bullying di taman bermain (playground bullying), kekerasan seksual, penyerangan secara berkelompok, dating violence, marital violence, child abuse, bullying di tempat kerja (workplace bullying), dan berbagai jenis kekerasan lain.[2] Adapun bentuk bullying yang terjadi pada idol K-Pop pada pertanyaan Anda termasuk ke dalam perundungan di tempat kerja (workplace bullying). Menurut Nurul Hidayati dan Idha Rahayuningsih dalam jurnal yang berjudul Bentuk dan Dampak Kekerasan di Tempat Kerja (Workplace Bullying) pada Buruh Pabrik di Gresik (hal. 126) yang mengutip Matthiensen, mengartikan workplace bullying sebagai tindakan negatif yang dilakukan di tempat kerja secara berulang-ulang oleh pihak-pihak tertentu yang melibatkan ketidakseimbangan kekuasaan, dan dapat berbentuk pelecehan, kekerasan, dan perbuatan yang tidak menyenangkan yang mengakibatkan korban bullying merasa inferior dan tidak mampu membela diri mereka.",
-                      "article_source":
-                          "https://www.hukumonline.com/klinik/a/perlindungan-karyawan-dari-ancaman-iharassment-i-lt5da91547d777f/"
-                    });
-                  },
-                  image:
-                      "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
-                  title:
-                      "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
-                  description:
-                      "Apa yang dimaksud dengan perundungan? Perlu diketahui terlebih dahulu bahwa perundungan atau bullying berasal dari kata merundung yang dalam KBBI berarti menyakiti orang lain, baik secara fisik maupun psikis, dalam bentuk kekerasan verbal, sosial, atau fisik berulang kali dan dari waktu ke waktu, seperti memanggil nama seseorang dengan julukan yang tidak disukai, memukul, mendorong, menyebarkan rumor, mengancam, atau merongrong.",
-                ),
-                CardArticle(
-                  onTap: () {
-                    Get.toNamed(Routes.ARTICLE_DETAIL, arguments: {
-                      "article_image":
-                          "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
-                      "article_title":
-                          "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
-                      "article_content":
-                          "Apa yang dimaksud dengan perundungan? Perlu diketahui terlebih dahulu bahwa perundungan atau bullying berasal dari kata merundung yang dalam KBBI berarti menyakiti orang lain, baik secara fisik maupun psikis, dalam bentuk kekerasan verbal, sosial, atau fisik berulang kali dan dari waktu ke waktu, seperti memanggil nama seseorang dengan julukan yang tidak disukai, memukul, mendorong, menyebarkan rumor, mengancam, atau merongrong. Selain itu, bullying juga dapat didefinisikan sebagai perilaku agresif dan menekan, baik dalam bentuk tindakan fisik secara langsung atau menyerang melalui perkataan.[1] Bentuk-bentuk dari bullying ini berubah seiring berjalannya usia seseorang. Mulai dari bullying di taman bermain (playground bullying), kekerasan seksual, penyerangan secara berkelompok, dating violence, marital violence, child abuse, bullying di tempat kerja (workplace bullying), dan berbagai jenis kekerasan lain.[2] Adapun bentuk bullying yang terjadi pada idol K-Pop pada pertanyaan Anda termasuk ke dalam perundungan di tempat kerja (workplace bullying). Menurut Nurul Hidayati dan Idha Rahayuningsih dalam jurnal yang berjudul Bentuk dan Dampak Kekerasan di Tempat Kerja (Workplace Bullying) pada Buruh Pabrik di Gresik (hal. 126) yang mengutip Matthiensen, mengartikan workplace bullying sebagai tindakan negatif yang dilakukan di tempat kerja secara berulang-ulang oleh pihak-pihak tertentu yang melibatkan ketidakseimbangan kekuasaan, dan dapat berbentuk pelecehan, kekerasan, dan perbuatan yang tidak menyenangkan yang mengakibatkan korban bullying merasa inferior dan tidak mampu membela diri mereka.",
-                      "article_source":
-                          "https://www.hukumonline.com/klinik/a/perlindungan-karyawan-dari-ancaman-iharassment-i-lt5da91547d777f/"
-                    });
-                  },
-                  image:
-                      "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
-                  title:
-                      "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
-                  description:
-                      "Apa yang dimaksud dengan perundungan? Perlu diketahui terlebih dahulu bahwa perundungan atau bullying berasal dari kata merundung yang dalam KBBI berarti menyakiti orang lain, baik secara fisik maupun psikis, dalam bentuk kekerasan verbal, sosial, atau fisik berulang kali dan dari waktu ke waktu, seperti memanggil nama seseorang dengan julukan yang tidak disukai, memukul, mendorong, menyebarkan rumor, mengancam, atau merongrong.",
-                ),
-                CardArticle(
-                  onTap: () {
-                    Get.toNamed(Routes.ARTICLE_DETAIL, arguments: {
-                      "article_image":
-                          "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
-                      "article_title":
-                          "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
-                      "article_content":
-                          "Apa yang dimaksud dengan perundungan? Perlu diketahui terlebih dahulu bahwa perundungan atau bullying berasal dari kata merundung yang dalam KBBI berarti menyakiti orang lain, baik secara fisik maupun psikis, dalam bentuk kekerasan verbal, sosial, atau fisik berulang kali dan dari waktu ke waktu, seperti memanggil nama seseorang dengan julukan yang tidak disukai, memukul, mendorong, menyebarkan rumor, mengancam, atau merongrong. Selain itu, bullying juga dapat didefinisikan sebagai perilaku agresif dan menekan, baik dalam bentuk tindakan fisik secara langsung atau menyerang melalui perkataan.[1] Bentuk-bentuk dari bullying ini berubah seiring berjalannya usia seseorang. Mulai dari bullying di taman bermain (playground bullying), kekerasan seksual, penyerangan secara berkelompok, dating violence, marital violence, child abuse, bullying di tempat kerja (workplace bullying), dan berbagai jenis kekerasan lain.[2] Adapun bentuk bullying yang terjadi pada idol K-Pop pada pertanyaan Anda termasuk ke dalam perundungan di tempat kerja (workplace bullying). Menurut Nurul Hidayati dan Idha Rahayuningsih dalam jurnal yang berjudul Bentuk dan Dampak Kekerasan di Tempat Kerja (Workplace Bullying) pada Buruh Pabrik di Gresik (hal. 126) yang mengutip Matthiensen, mengartikan workplace bullying sebagai tindakan negatif yang dilakukan di tempat kerja secara berulang-ulang oleh pihak-pihak tertentu yang melibatkan ketidakseimbangan kekuasaan, dan dapat berbentuk pelecehan, kekerasan, dan perbuatan yang tidak menyenangkan yang mengakibatkan korban bullying merasa inferior dan tidak mampu membela diri mereka.",
-                      "article_source":
-                          "https://www.hukumonline.com/klinik/a/perlindungan-karyawan-dari-ancaman-iharassment-i-lt5da91547d777f/"
-                    });
-                  },
-                  image:
-                      "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
-                  title:
-                      "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
-                  description:
-                      "Apa yang dimaksud dengan perundungan? Perlu diketahui terlebih dahulu bahwa perundungan atau bullying berasal dari kata merundung yang dalam KBBI berarti menyakiti orang lain, baik secara fisik maupun psikis, dalam bentuk kekerasan verbal, sosial, atau fisik berulang kali dan dari waktu ke waktu, seperti memanggil nama seseorang dengan julukan yang tidak disukai, memukul, mendorong, menyebarkan rumor, mengancam, atau merongrong.",
-                ),
-                CardArticle(
-                  onTap: () {
-                    Get.toNamed(Routes.ARTICLE_DETAIL, arguments: {
+                    Get.toNamed(Routes.ARTICLE_DETAIL, parameters: {
                       "article_image":
                           "https://images.hukumonline.com/frontend/lt5da91547d777f/lt5de4c3ac71063.jpg",
                       "article_title":

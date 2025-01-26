@@ -19,7 +19,7 @@ class ArticleDetailView extends GetView<ArticleDetailController> {
             child: Column(
               children: [
                 Text(
-                  "Perlindungan Hukum bagi Karyawan dari Bullying di Tempat Kerja",
+                  controller.title,
                   style: TextStyle(
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
@@ -35,7 +35,7 @@ class ArticleDetailView extends GetView<ArticleDetailController> {
                   height: 16,
                 ),
                 Text(
-                  "Sumber : ${controller.image}",
+                  "Sumber : ${controller.source}",
                   style: TextStyle(
                     fontSize: 11,
                   ),

@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/account_setting/bindings/account_setting_binding.dart';
+import '../modules/account_setting/views/account_setting_view.dart';
 import '../modules/add_complaint/bindings/add_complaint_binding.dart';
 import '../modules/add_complaint/views/add_complaint_view.dart';
 import '../modules/add_consultation/bindings/add_consultation_binding.dart';
@@ -22,10 +24,14 @@ import '../modules/home_content_psychologist/bindings/home_content_psychologist_
 import '../modules/home_content_psychologist/views/home_content_psychologist_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/password_setting/bindings/password_setting_binding.dart';
+import '../modules/password_setting/views/password_setting_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
 import '../modules/register/bindings/register_binding.dart';
 import '../modules/register/views/register_view.dart';
+import '../modules/user_complaint/bindings/user_complaint_binding.dart';
+import '../modules/user_complaint/views/user_complaint_view.dart';
 
 part 'app_routes.dart';
 
@@ -99,6 +105,21 @@ class AppPages {
       name: _Paths.ADD_CONSULTATION,
       page: () => const AddConsultationView(),
       binding: AddConsultationBinding(),
+    ),
+    GetPage(
+      name: _Paths.ACCOUNT_SETTING,
+      page: () => const AccountSettingView(),
+      binding: AccountSettingBinding(),
+    ),
+    GetPage(
+      name: _Paths.PASSWORD_SETTING,
+      page: () => const PasswordSettingView(),
+      binding: PasswordSettingBinding(),
+    ),
+    GetPage(
+      name: _Paths.USER_COMPLAINT,
+      page: () => const UserComplaintView(),
+      binding: UserComplaintBinding(),
     ),
   ];
 }

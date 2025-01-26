@@ -96,27 +96,28 @@ class ConsultationView extends GetView<ConsultationController> {
                                         SizedBox(
                                           width: Get.width,
                                           child: Text(
-                                            snapshot.data?[index].bookedBy !=
-                                                    null
-                                                ? time.isBefore(DateTime.now())
-                                                    ? "Selesai"
-                                                    : "Sudah di Book"
-                                                : "Dijadwalkan",
+                                            time.isBefore(DateTime.now())
+                                                ? "Selesai"
+                                                : snapshot.data?[index]
+                                                            .bookedBy !=
+                                                        null
+                                                    ? "Sudah di book"
+                                                    : "Siap di book",
                                             style: TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.w500,
-                                              color: snapshot.data?[index]
-                                                          .bookedBy !=
-                                                      null
-                                                  ? time.isBefore(
-                                                          DateTime.now())
+                                              color:
+                                                  time.isBefore(DateTime.now())
                                                       ? Theme.of(context)
                                                           .colorScheme
                                                           .error
-                                                      : Color(ColorTheme
-                                                          .PRIMARY_600)
-                                                  : Color(
-                                                      ColorTheme.SECONDARY_600),
+                                                      : snapshot.data?[index]
+                                                                  .bookedBy !=
+                                                              null
+                                                          ? Color(ColorTheme
+                                                              .PRIMARY_600)
+                                                          : Color(ColorTheme
+                                                              .SECONDARY_600),
                                             ),
                                             textAlign: TextAlign.end,
                                           ),

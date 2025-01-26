@@ -145,7 +145,13 @@ class ConsultationDetailView extends GetView<ConsultationDetailController> {
                                               child: SizedBox(
                                                 width: Get.width * 0.9,
                                                 child: FilledButton(
-                                                  onPressed: bookBy.data != null
+                                                  onPressed: bookBy.data !=
+                                                              null ||
+                                                          consulation
+                                                              .data!.schedule!
+                                                              .toDate()
+                                                              .isAfter(DateTime
+                                                                  .now())
                                                       ? null
                                                       : () {
                                                           controller.onBookConsultation(

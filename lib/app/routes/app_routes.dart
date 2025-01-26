@@ -17,6 +17,9 @@ abstract class Routes {
   static const CONSULTATION_DETAIL = _Paths.CONSULTATION_DETAIL;
   static const HOME_CONTENT_PSYCHOLOGIST = _Paths.HOME_CONTENT_PSYCHOLOGIST;
   static const ADD_CONSULTATION = _Paths.ADD_CONSULTATION;
+  static const ACCOUNT_SETTING = _Paths.ACCOUNT_SETTING;
+  static const PASSWORD_SETTING = _Paths.PASSWORD_SETTING;
+  static const USER_COMPLAINT = _Paths.USER_COMPLAINT;
 }
 
 abstract class _Paths {
@@ -35,4 +38,7 @@ abstract class _Paths {
   static const CONSULTATION_DETAIL = '/consultation-detail';
   static const HOME_CONTENT_PSYCHOLOGIST = '/home-content-psychologist';
   static const ADD_CONSULTATION = '/add-consultation';
+  static const ACCOUNT_SETTING = '/account-setting';
+  static const PASSWORD_SETTING = '/password-setting';
+  static const USER_COMPLAINT = '/user-complaint';
 }
