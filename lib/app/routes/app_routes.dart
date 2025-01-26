@@ -20,6 +20,7 @@ abstract class Routes {
   static const ACCOUNT_SETTING = _Paths.ACCOUNT_SETTING;
   static const PASSWORD_SETTING = _Paths.PASSWORD_SETTING;
   static const USER_COMPLAINT = _Paths.USER_COMPLAINT;
+  static const FORGOT_PASSWORD = _Paths.FORGOT_PASSWORD;
 }
 
 abstract class _Paths {
@@ -41,4 +42,5 @@ abstract class _Paths {
   static const ACCOUNT_SETTING = '/account-setting';
   static const PASSWORD_SETTING = '/password-setting';
   static const USER_COMPLAINT = '/user-complaint';
+  static const FORGOT_PASSWORD = '/forgot-password';
 }

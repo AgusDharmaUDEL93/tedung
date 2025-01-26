@@ -103,7 +103,9 @@ class LoginView extends GetView<LoginController> {
                                 Color(ColorTheme.PRIMARY_800),
                               ),
                             ),
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.toNamed(Routes.FORGOT_PASSWORD);
+                            },
                             child: Text("Lupa Password"),
                           ),
                           SizedBox(

@@ -14,6 +14,8 @@ import '../modules/consultation/bindings/consultation_binding.dart';
 import '../modules/consultation/views/consultation_view.dart';
 import '../modules/consultation_detail/bindings/consultation_detail_binding.dart';
 import '../modules/consultation_detail/views/consultation_detail_view.dart';
+import '../modules/forgot_password/bindings/forgot_password_binding.dart';
+import '../modules/forgot_password/views/forgot_password_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/home_content/bindings/home_content_binding.dart';
@@ -120,6 +122,11 @@ class AppPages {
       name: _Paths.USER_COMPLAINT,
       page: () => const UserComplaintView(),
       binding: UserComplaintBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORGOT_PASSWORD,
+      page: () => const ForgotPasswordView(),
+      binding: ForgotPasswordBinding(),
     ),
   ];
 }

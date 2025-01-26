@@ -29,6 +29,7 @@ class HomeContentPsychologistController extends GetxController {
     return firestore
         .collection("consultation")
         .where("psychologist_id", isEqualTo: auth.currentUser?.uid)
+        .orderBy("schedule", descending: true)
         .snapshots()
         .map((snapshot) {
       return snapshot.docs.map((element) {

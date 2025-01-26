@@ -261,9 +261,6 @@ class RegisterView extends GetView<RegisterController> {
                           height: 32,
                         ),
                         SizedBox(
-                          height: 32,
-                        ),
-                        SizedBox(
                           width: Get.width,
                           child: FilledButton(
                             style: ButtonStyle(

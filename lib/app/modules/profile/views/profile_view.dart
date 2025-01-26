@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tedung/app/data/models/user_model.dart';
 import 'package:tedung/app/data/utils/roles.dart';
+import 'package:tedung/app/routes/app_pages.dart';
 
 import '../../../theme/color.dart';
 import '../controllers/profile_controller.dart';
@@ -186,6 +187,9 @@ class ProfileView extends GetView<ProfileController> {
                                 height: 16,
                               ),
                               InkWell(
+                                onTap: () {
+                                  Get.toNamed(Routes.ACCOUNT_SETTING);
+                                },
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(vertical: 8),
                                   child: Row(
@@ -206,6 +210,9 @@ class ProfileView extends GetView<ProfileController> {
                                 color: Colors.black12,
                               ),
                               InkWell(
+                                onTap: () {
+                                  Get.toNamed(Routes.PASSWORD_SETTING);
+                                },
                                 child: Padding(
                                   padding: EdgeInsets.symmetric(vertical: 8),
                                   child: Row(
@@ -244,9 +251,13 @@ class ProfileView extends GetView<ProfileController> {
                                           height: 16,
                                         ),
                                         InkWell(
+                                          onTap: () {
+                                            Get.toNamed(Routes.USER_COMPLAINT);
+                                          },
                                           child: Padding(
                                             padding: EdgeInsets.symmetric(
-                                                vertical: 8),
+                                              vertical: 8,
+                                            ),
                                             child: Row(
                                               children: [
                                                 Expanded(
