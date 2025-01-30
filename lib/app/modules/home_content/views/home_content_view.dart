@@ -51,7 +51,7 @@ class HomeContentView extends GetView<HomeContentController> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
                       Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed mattis ante, vitae ullamcorper libero. Sed quis diam consectetur, cursus mauris eget, iaculis odio.",
+                        "Sistem ini mempermudah karyawan melaporkan bullying secara rahasia, aman, dan terpantau.",
                       ),
                       SizedBox(
                         height: 20,

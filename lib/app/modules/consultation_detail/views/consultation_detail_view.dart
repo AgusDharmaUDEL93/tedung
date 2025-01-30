@@ -145,25 +145,27 @@ class ConsultationDetailView extends GetView<ConsultationDetailController> {
                                               child: SizedBox(
                                                 width: Get.width * 0.9,
                                                 child: FilledButton(
-                                                  onPressed: bookBy.data !=
+                                                  onPressed: (bookBy.data !=
                                                               null ||
                                                           consulation
                                                               .data!.schedule!
                                                               .toDate()
-                                                              .isAfter(DateTime
-                                                                  .now())
-                                                      ? null
+                                                              .isBefore(DateTime
+                                                                  .now()))
+                                                      ? null // Tombol dinonaktifkan
                                                       : () {
-                                                          controller.onBookConsultation(
-                                                              psychologist.data
-                                                                      ?.email ??
-                                                                  "",
-                                                              formatTimestampGoogleCalendar(
-                                                                  consulation
-                                                                          .data
-                                                                          ?.schedule ??
-                                                                      Timestamp
-                                                                          .now()));
+                                                          controller
+                                                              .onBookConsultation(
+                                                            psychologist.data
+                                                                    ?.email ??
+                                                                "",
+                                                            formatTimestampGoogleCalendar(
+                                                              consulation.data
+                                                                      ?.schedule ??
+                                                                  Timestamp
+                                                                      .now(),
+                                                            ),
+                                                          );
                                                         },
                                                   child: Text(
                                                     'Book',
