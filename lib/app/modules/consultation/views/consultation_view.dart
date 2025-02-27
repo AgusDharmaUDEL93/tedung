@@ -44,6 +44,7 @@ class ConsultationView extends GetView<ConsultationController> {
                     builder: (context, snapshot) {
                       return ListView.separated(
                         shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
                         itemBuilder: (context, index) {
                           var time = snapshot.data?[index].schedule?.toDate() ??
                               Timestamp.now().toDate();
@@ -76,7 +77,7 @@ class ConsultationView extends GetView<ConsultationController> {
                                           CrossAxisAlignment.start,
                                       children: [
                                         Text(
-                                          "Dr. ${psychologist.data?.name}",
+                                          "${psychologist.data?.name}",
                                           style: TextStyle(
                                             color:
                                                 Color(ColorTheme.SECONDARY_600),

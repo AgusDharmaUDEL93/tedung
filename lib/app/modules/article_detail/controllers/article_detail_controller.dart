@@ -5,7 +5,6 @@ class ArticleDetailController extends GetxController {
 
   late String title;
   late String content;
-  late String source;
   late String image;
 
   @override
@@ -14,7 +13,6 @@ class ArticleDetailController extends GetxController {
 
     title = Get.parameters['article_title'].toString();
     content = Get.parameters["article_content"].toString();
-    source = Get.parameters["article_source"].toString();
     image = Get.parameters["article_image"].toString();
   }
 

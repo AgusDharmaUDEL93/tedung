@@ -279,6 +279,50 @@ class ProfileView extends GetView<ProfileController> {
                                     )
                                   : SizedBox(),
                               SizedBox(
+                                height: 32,
+                              ),
+                              InkWell(
+                                onTap: controller.onCallHotline,
+                                child: Container(
+                                  padding: EdgeInsets.all(16),
+                                  width: Get.width,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                        color: Color(
+                                          ColorTheme.SECONDARY_800,
+                                        ),
+                                      ),
+                                      color: Color(ColorTheme.SECONDARY_50),
+                                      borderRadius: BorderRadius.circular(8)),
+                                  child: Column(
+                                    children: [
+                                      Text(
+                                          "Hubungi Hotline (Telepon atau WhatsApp)"),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: [
+                                          Icon(Icons.phone),
+                                          Text(
+                                            "+62 813-3901-2045",
+                                            style: TextStyle(
+                                              fontSize: 24,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text("Untuk aduan dan bantuan lainnya"),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              SizedBox(
                                 height: 60,
                               ),
                               SizedBox(

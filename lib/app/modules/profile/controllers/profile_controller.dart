@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../../../data/models/user_model.dart';
 import '../../../routes/app_pages.dart';
@@ -50,5 +51,11 @@ class ProfileController extends GetxController {
         Get.back();
       },
     );
+  }
+
+  void onCallHotline() {
+    Uri hotlineUrl = Uri.parse("https://wa.me/+6281339012045");
+
+    launchUrl(hotlineUrl);
   }
 }

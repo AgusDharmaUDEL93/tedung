@@ -32,15 +32,6 @@ class ArticleDetailView extends GetView<ArticleDetailController> {
                   controller.image,
                 ),
                 SizedBox(
-                  height: 16,
-                ),
-                Text(
-                  "Sumber : ${controller.source}",
-                  style: TextStyle(
-                    fontSize: 11,
-                  ),
-                ),
-                SizedBox(
                   height: 32,
                 ),
                 Text(
