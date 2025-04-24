@@ -14,6 +14,7 @@ Future<void> main() async {
   );
   runApp(
     GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.light(
           primary: Color(ColorTheme.PRIMARY_500),

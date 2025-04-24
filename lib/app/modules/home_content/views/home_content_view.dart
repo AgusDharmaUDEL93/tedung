@@ -69,10 +69,12 @@ class HomeContentView extends GetView<HomeContentController> {
                         ),
                         style: ButtonStyle(
                           foregroundColor: WidgetStatePropertyAll(
-                            Color(ColorTheme.PRIMARY_800),
+                            Color(0xFFFBEAEA),
                           ),
+                          backgroundColor:
+                              WidgetStatePropertyAll(Color(0xFFD6413E)),
                           iconColor: WidgetStatePropertyAll(
-                            Color(ColorTheme.PRIMARY_800),
+                            Color(0xFFFBEAEA),
                           ),
                           padding: WidgetStatePropertyAll(
                             EdgeInsets.symmetric(vertical: 4, horizontal: 8),
